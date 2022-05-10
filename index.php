@@ -16,7 +16,7 @@
         </a>
     </nav>
 <div class="container">
-    <form name="form_imc" id="form_imc" method="GET" enctype="multipart/form-data" action="imc.php" >
+    <form name="form_imc" id="form_imc" method="POST" enctype="multipart/form-data" action="imc.php" >
       <div class="form-group">
       <label for="altura">Altura</label>
       <input type="number" step="0.01" min="1" class="form-control" id="altura" name="altura">
@@ -32,8 +32,8 @@
     <?php
 
 //function calc_imc($peso,$altura){
-$peso  = $_GET['peso'];
-$altura =$_GET['altura'];
+$peso  = $_POST['peso'];
+$altura =$_POST['altura'];
 $total = $peso/($altura*$altura);
 
  if($total < 16){
