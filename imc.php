@@ -15,19 +15,7 @@
           Calcule aqui seu IMC
         </a>
     </nav>
-<div class="container">
-    <form name="form_imc" id="form_imc" method="GET" enctype="multipart/form-data" action="imc.php" >
-      <div class="form-group">
-      <label for="altura">Altura</label>
-      <input type="number" step="0.01" min="1" class="form-control" id="altura" name="altura">
-      </div>
-      <div class="form-group">
-      <label for="exampleInputPassword1">Peso</label>
-      <input type="number" step="0.01" min="1" class="form-control" id="peso" name="peso">
-      </div>
-      <button type="submit" class="btn btn-primary">Calcular</button>
-    </form>
-    </div>     
+ 
 
     <?php
 
