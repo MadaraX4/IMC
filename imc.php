@@ -20,9 +20,9 @@
     <?php
 
 //function calc_imc($peso,$altura){
-$peso  = $_GET['peso'];
-$altura =$_GET['altura'];
-$total = $peso/($altura*$altura);
+    $peso  = $_POST['peso'];
+    $altura =$_POST['altura'];
+    $total = $peso/($altura*$altura);
 
  if($total < 16){
     echo"Destnutrição grau 3";
